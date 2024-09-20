@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    font-family: "Lato";
+}
+
+.center{
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: rgb(6, 119, 200);
+    padding: 10px 0;
+}
+
+.logo{
+    float: left;
+    color: white;
+}
+
+.logo h2{
+    font-size: 29px;
+    font-weight: normal;
+}
+
+.form-login{
+    float: right;
+}
+
+.form-element{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.form-element p {
+    color: white;
+    font-size: 14px;
+}
+
+.form-element input[type=email],
+.form-element input[type=password]{
+    margin-top: 4px;
+    border: 0;
+    padding: 3px;
+    outline: none;
+}
+
+.form-element input[type=submit]{
+    cursor: pointer;
+    border: none;
+    background-color:rgb(28, 111, 171) ;
+    padding: 3px 5px;
+    color: white;
+}
+
+.form-element input[type=submit]:hover{
+    background-color:rgb(9, 115, 190) ;
+    
+}
+
+.main{
+    display: flex;
+    background: linear-gradient(white, rgb(215, 211, 211));
+    padding: 40px 0;
+}
+
+.img-pessoas{
+    float: left;
+    width: 60%;
+}
+
+.img-pessoas img{
+    max-width: 50%;
+}
+
+.abrir-conta{
+    width: 40%;
+    float: left;
+}
+.abrir-conta h2{
+    font-size: 36px;
+}
+.abrir-conta h3{
+    font-size: 19px;
+    color: rgb(30, 30, 30);
+    font-weight: normal;
+    padding: 2% 0;
+}
+
+.form-cadastro{
+    margin-top: 10px;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+}
+
+.w100{
+    width: 100%;
+    float: left;
+    padding: 0 5px;
+}
+
+.form-cadastro input{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-cadastro input[type="text"], 
+.form-cadastro input[type="email"],
+.form-cadastro input[type="password"]{
+    height: 40px;
+    border: 1px solid #a5dcff;
+    padding: 0 2%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.form-cadastro input[type="submit"]{
+    max-width: 200px;
+    height: 40px;
+    background: linear-gradient(#67ae55,#578843);
+    color: white;
+    cursor: pointer;
+    border: 0;
+    font-size: 19px;
+}
+
+.form-cadastro .w100 h2{
+    margin-top: 10px;
+    color: #1d2129;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.form-cadastro select.nascimento{
+    float: left;
+    margin-top: 5px;
+}
+
+.form-cadastro input[type=radio]{
+    padding: 5px;
+}
+
+.input-radio{
+    float: left;
+    margin: 8px 10px;
+}
+
+.input-radio h2{
+    display: inline-block;
+}
+
+.input-radio input[type=radio]{
+    width: auto !important;
+    display: inline-block;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    overflow-y: inherit;
+    background-color: #ccc;
+    padding-top: 10px;
+}
+
+.footer-links ul li{
+    display: inline-block;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: #1d2129;
+}
+
+
+@media screen and (max-width: 750px){
+    .logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+   
+    .form-login{
+        margin-top: 17px;
+        float: none;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .form-element{
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .form-element p {
+        color: white;
+        font-size: 14px;
+    }
+    
+    .form-element input[type=email],
+    .form-element input[type=password]{
+        margin-top: 4px;
+        border: 0;
+        height: 22px;
+        padding-left: 3px;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .img-pessoas{
+        display: none;
+    }
+
+    .abrir-conta{
+        width: 100%;
+    }
+}
